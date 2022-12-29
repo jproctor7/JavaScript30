@@ -72,7 +72,7 @@ keys.forEach(key => key.addEventListener('transitionend', removeTransition);
 
 function removeTransition(e) {
   if (e.propertyName !== 'transform') return;
-  e.classList.remove('playing');
+  this.classList.remove('playing');
 }
 </script>
 
